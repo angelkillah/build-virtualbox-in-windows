@@ -10,10 +10,10 @@ def main():
 
     # Build VBox
     os.chdir(path_vbox_dir)
-    execute_batch_x32_inst('call env.bat\nkmk\nkmk packing')
+    execute_batch_x32_inst('call env.bat\nkmk KBUILD_TYPE=debug\nkmk packing')
     
     # Load drivers
-    os.chdir(f'{path_vbox_dir}/out/win.amd64/release/bin')
+    os.chdir(f'{path_vbox_dir}/out/win.amd64/debug/bin')
     execute_batch_x32_inst(f'SET PATH=%PATH%;{path_main_dir}\\curl\\x64\nSET PATH=%PATH%;{path_main_dir}\\curl\\x32\ncall comregister.cmd\nloadall.cmd')
 
     # Execute VBox
