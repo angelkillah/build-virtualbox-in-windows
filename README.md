@@ -52,7 +52,7 @@ I recommend build the VirtualBox in windows 10 VM. (I built in Windows 10 VM of 
 Before building, you'll have to patch the source code in `src\VBox\Runtime\common\ldr\ldrPE.cpp:4892`:  
 
 ```C
-// Goto line 4812
+// Goto line 4892
 // Make sure you patch it into the following lines:
     if (   fNewerStructureHack
             && Dir.Size > cbMaxKnown
