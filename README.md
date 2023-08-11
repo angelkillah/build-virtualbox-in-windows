@@ -5,6 +5,7 @@ Based on [this repository](https://github.com/bruce30262/build-virtualbox-in-win
 I recommend build the VirtualBox in windows 10 VM. (I built in Windows 10 VM of vmware)
 ## Setup Environment
 
+* .NET Framework 3.5 (https://www.microsoft.com/es-es/download/details.aspx?id=21)
 * [Visual Studio 2019 Professional](https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes)
 * Windows SDK 11 & WDK 11
     * https://go.microsoft.com/fwlink/?linkid=2166460
