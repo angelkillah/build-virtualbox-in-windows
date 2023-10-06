@@ -36,7 +36,7 @@ I recommend build the VirtualBox in windows 10 VM. (I built in Windows 10 VM of 
     * Install in the `C:\VBoxBuild\SSL\OpenSSL-Win{architecture bit}`
     * Example: `C:\VBoxBuild\SSL\OpenSSL-Win32`
 
-* [WinDDK 7.1](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11800)
+* [WinDDK 7.1](https://www.microsoft.com/en-us/download/details.aspx?id=11800)
 * [Yasm](https://yasm.tortall.net/Download.html)
     * Download `Win64.exe`, rename it to `yasm.exe`. Set the PATH env so `yasm.exe` can be found in PATH.
 * Qt
