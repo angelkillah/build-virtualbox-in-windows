@@ -61,7 +61,7 @@ I recommend build the VirtualBox in windows 10 VM. (I built in Windows 10 VM of 
 
 ## How to build
 
-The building steps are bascially the same as the [original](#2-set-up-privilege) :  
+The building steps are bascially the same as the [original](https://github.com/bruce30262/build-virtualbox-in-windows?tab=readme-ov-file#2-set-up-privilege) :  
 * Turn on test mode, reboot.  
 * Make sure the VirtualBox source code is in `C:/VBoxBuild/VirtualBox/`.  
 * Open cmd as admin.
@@ -70,7 +70,7 @@ The building steps are bascially the same as the [original](#2-set-up-privilege)
     - This will do `kmk` and `kmk packing`, then you can run `C:\VBoxBuild\VirtualBox\out\win.amd64\release\bin\Virtualbox.exe`.
 
 ### Troubleshooting  
-* Make sure to delete all the certificates named `MyTestCertificate` before building ( check the [FAQ](#faq) below ).  
+* Make sure to delete all the certificates named `MyTestCertificate` before building ( check the [FAQ](https://github.com/bruce30262/build-virtualbox-in-windows?tab=readme-ov-file#q-i-keep-getting-an-error-in-signtool-multiple-certificates-were-found-that-meet-all-the-given-criteria) below ).  
 * During the first build, it probably will run into error saying something like `No making rule for VBoxGuestAdditions.iso`. All you need to do is:  
     - `mkdir C:/VBoxBuild/VirtualBox/out/win.amd64/release/bin/additions/`  
     - `touch C:/VBoxBuild/VirtualBox/out/win.amd64/release/bin/additions/VBoxGuestAdditions.iso`  
