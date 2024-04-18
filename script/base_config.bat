@@ -1,6 +1,6 @@
 @echo off
 
-SET VS2019VC_DIR=C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional
+SET VS2022VC_DIR=C:\Program Files\Microsoft Visual Studio\2022\Professional
 SET WINDDK_DIR=C:\WinDDK\7600.16385.1\bin\amd64
 
 SET DEFAULT_DIR=C:\VBoxBuild

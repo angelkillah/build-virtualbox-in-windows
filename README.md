@@ -3,15 +3,16 @@
 ## Notice  
 Based on [this repository](https://github.com/bruce30262/build-virtualbox-in-windows). Currently works for VirtualBox 7.0.16.  
 I recommend build the VirtualBox in windows 10 VM. (I built in Windows 10 VM of vmware)
+
 ## Setup Environment
 
-* [Visual Studio 2019 Professional](https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes)
+* [Visual Studio 2022 Professional](https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes)
 
 * Windows SDK 11 & WDK 11
     * https://go.microsoft.com/fwlink/?linkid=2166460
     * https://go.microsoft.com/fwlink/?linkid=2166289
     * See also: https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk
-    * Basically you can use Visual Stuido Installer to install the latest SDK and WDK. **Notice that SDK and WDK's version should be the same.**  
+    * Basically you can use Visual Studio Installer to install the latest SDK and WDK. **Notice that SDK and WDK's version should be the same.**  
     * Currently I'm using version `10.0.22000.1`.
     
 * [Zip for Windows](https://gnuwin32.sourceforge.net/packages/zip.htm)
@@ -44,7 +45,7 @@ I recommend build the VirtualBox in windows 10 VM. (I built in Windows 10 VM of 
 
 * [Qt5](https://download.qt.io/official_releases/qt/5.15/5.15.2/single/qt-everywhere-src-5.15.2.zip.mirrorlist)
     * You have to build it for Virtualbox GUI.
-    * First of all, extract the zip file in `C:\VBoxBuild\Qt\qt5-everywhere-src-5.15.2` and Build with this build instruction using `x64 Native Tools Command Prompt for VS 2019`.
+    * First of all, extract the zip file in `C:\VBoxBuild\Qt\qt5-everywhere-src-5.15.2` and Build with this build instruction using `x64 Native Tools Command Prompt for VS 2022.
     ```powershell
     cd C:\VBoxBuild\Qt\qt5-everywhere-src-5.15.2
     SET _ROOT=C:VBoxBuild\Qt\qt5-everywhere-src-5.15.2

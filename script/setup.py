@@ -3,6 +3,7 @@ url_mingw       = r'https://jaist.dl.sourceforge.net/project/mingw-w64/Toolchain
 url_sdl         = r'http://www.libsdl.org/release/SDL-devel-1.2.15-VC.zip'
 url_curl        = r'https://curl.se/download/curl-8.7.1.zip'
 
+import ssl
 from tool import *
 
 def main():
@@ -17,6 +18,8 @@ def main():
         print(f'[*] Error: Please copy to {path_vbox_dir} the source of VirtualBox to compile')
         exit(1)
 
+    ssl._create_default_https_context = ssl._create_unverified_context
+    
     # Download pre-requisites
     print('[+] Set up libraries')
     if create_folder(f'{path_main_dir}/7za'):
